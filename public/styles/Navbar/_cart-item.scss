@@ -1,0 +1,57 @@
+.item{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-item{
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 10px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .name-product{
+        h6{
+            font-weight: lighter;
+            color: $Dark-grayish-blue;
+            text-transform: capitalize;
+            padding: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+            b{
+                font-weight: bold;
+            }
+        }
+    }
+    .delete-item{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+.checkout{
+    button{
+       
+            width: 100%;
+            padding: 15px 0;
+            background-color: hsl(26deg, 100%, 55%);
+            text-align: center;
+            color: white;
+            margin: 10px 0;
+            border: unset;
+            outline: unset;
+            border-radius: 10px;
+            transition: opacity 0.3s ease-in-out;
+            text-transform: capitalize;
+            font-weight: bold;
+            &:hover{
+                opacity: 0.6;
+            }
+        
+    }
+}

@@ -1,0 +1,110 @@
+#product{
+    padding: 80px 40px;
+    h5{
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $Orange;
+    }
+    h1{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 3em;
+        margin: 15px 0;
+        color: $Very-dark-blue;
+        @media only screen and (max-width:600px) {
+            &{
+                font-size: 2em;
+               
+            }
+          }
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 480px;
+        padding: 8px 0;
+        color: $Dark-grayish-blue;
+    }
+    .current-price {
+        position: relative;
+        h2{
+        font-weight: bold;
+        color: $Very-dark-blue;
+        }
+       .discount {
+            background-color: hsl(25deg, 100%, 94%);
+            border-radius: 5px;
+            color: hsl(26deg, 100%, 55%);
+            font-weight: bold;
+            padding: 4px 8px;
+            position: absolute;
+            top: 2px;
+            left: 130px;
+        }
+    }
+    .prev-price{
+        h6{
+            text-decoration: line-through;
+            color: $Grayish-blue;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    }
+    .actions{
+        
+        .nbr-of-itmes{
+            padding: 3px 0;
+            background-color: $Pale-orange;
+            border-radius: 10px;
+             @include centring();
+             margin: 10px 0;
+            input[type="button"]{
+                background: unset;
+                font-weight: bold;
+                font-size: 2em;
+                color: $Orange;
+                border: unset;
+                outline: unset;
+                margin: -14px;
+                
+            }
+            input[type="number"]{
+                width: 60px;
+                padding: 6px;
+                margin: 10px;
+                background: unset;
+                border: unset;
+                outline: unset;
+                user-select: none;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1em;
+            }
+        }
+        .command-item{
+            button{
+                width: 100%;
+                padding: 15px 0;
+                background-color: $Orange;
+                text-align: center;
+                color: white;
+                margin:10px 0;
+                border: unset;
+                outline: unset;
+                border-radius: 10px;
+                transition: opacity 0.3s ease-in-out;
+                h6{
+                    font-weight: bold;
+                }
+                &:hover{
+                    opacity: 0.6;
+                }
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+}
